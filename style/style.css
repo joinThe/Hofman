@@ -1,10 +1,32 @@
+/**common properties**/
+
 html {
     font-size: 10px;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+
+
+.link_and_button{
+    height: 48px;
+    background-color: burlywood;
+}
+
+
+.link_and_button:hover{
+    background-color: darkred;
+}
+
+.header {
+    height: 100vh;
+    background-image: url("../assets/img/Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -14,6 +36,10 @@ a{
     /*display: inline-block;*/
 }
 
+/**-----Header-----**/
+
+/**--Nav Menu--**/
+
 .nav-menu {
     background-color: #F6F6F6;
     height: 156px;
@@ -22,7 +48,7 @@ a{
     align-items: center;
 }
 
-.nav-menu >.container {
+.nav-menu > .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +88,7 @@ a{
     /*text-decoration: blue;*/
 }
 
-.nav-reference-item:first-child{
+.nav-reference-item:first-child {
     margin-left: 0;
 }
 
@@ -88,31 +114,37 @@ a{
     display: inline-block;
     margin-left: 43px;
 }
+
 .social-reference-item:first-child {
     margin-left: 0;
 }
 
-.social-reference{
+.social-reference {
     font-size: 24px;
     color: #4B4B4B;
 }
 
 
-.hero {
-    background-image: url("../assets/img/Background.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 1000px;
-}
+
+/**--Hero--**/
 
 .hero .container{
+    display: block;
+
+    /*height: 100%;*/
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.hero__title{
+.hero-content {
+    /*display: flex;*/
+    /*align-items: center;*/
+
+}
+
+.hero__title {
 
     font-family: Montserrat;
     font-style: normal;
@@ -129,7 +161,7 @@ a{
     color: #4B4B4B;
 }
 
-.hero__text{
+.hero__text {
 
     font-family: Source Sans Pro;
     font-style: normal;
@@ -144,9 +176,4 @@ a{
 
     color: #4B4B4B;
 
-}
-
-.link_and_button{
-    height: 48px;
-    /*background-color: darkred;  */
 }

@@ -1,0 +1,150 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    max-width: 117rem;
+    margin: 0 auto;
+    /*display: inline-block;*/
+}
+
+.nav-menu {
+    background-color: #F6F6F6;
+    height: 156px;
+    height: 15.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu >.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-logo {
+    /*margin-left: 50px;*/
+}
+
+.nav-logo__text {
+    font-family: Montserrat, sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 44px;
+    line-height: 4.4rem;
+    /* identical to box height */
+    color: #7D7D7D;
+}
+
+
+.nav-references {
+    display: flex;
+    align-items: center;
+    margin-left: 290px;
+}
+
+
+.nav-reference-item {
+    display: inline-block;
+    align-items: center;
+    margin-left: 50px;
+    /*margin: 65px 25px;*/
+    /*margin: 6.5rem 2.5rem;*/
+    /*text-decoration: blue;*/
+}
+
+.nav-reference-item:first-child{
+    margin-left: 0;
+}
+
+.nav-reference {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 23px;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    color: #4B4B4B;
+}
+
+.social-references {
+    display: flex;
+    align-items: center;
+    margin-left: 170px;
+}
+
+.social-reference-item {
+    display: inline-block;
+    margin-left: 43px;
+}
+.social-reference-item:first-child {
+    margin-left: 0;
+}
+
+.social-reference{
+    font-size: 24px;
+    color: #4B4B4B;
+}
+
+
+.hero {
+    background-image: url("../assets/img/Background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1000px;
+}
+
+.hero .container{
+    display: flex;
+    align-items: center;
+}
+
+.hero__title{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 48px;
+    /* identical to box height, or 109% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1.6px;
+
+    color: #4B4B4B;
+}
+
+.hero__text{
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+
+}
+
+.link_and_button{
+    height: 48px;
+    /*background-color: darkred;  */
+}

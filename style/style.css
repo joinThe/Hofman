@@ -108,6 +108,8 @@ a{
 .hero .container{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .hero__title{

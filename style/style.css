@@ -10,15 +10,41 @@ a {
 }
 
 
-
-.link_and_button{
+.link_and_button {
+    /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 48px;
+    min-width: 180px;
+    padding: 15px 26px;
     background-color: burlywood;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #3C3C3C;
 }
 
 
-.link_and_button:hover{
+.link_and_button:hover {
     background-color: darkred;
+}
+.section__title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 48px;
+    color: #4B4B4B;
 }
 
 .header {
@@ -34,6 +60,9 @@ a {
     max-width: 117rem;
     margin: 0 auto;
     /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /**-----Header-----**/
@@ -49,9 +78,7 @@ a {
 }
 
 .nav-menu > .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 
 }
 
@@ -125,55 +152,88 @@ a {
 }
 
 
-
 /**--Hero--**/
 
-.hero .container{
-    display: block;
+.hero {
+    display: flex;
 
     /*height: 100%;*/
-    display: flex;
-    align-items: center;
+    height: calc(100vh - 156px);
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
+
 
 .hero-content {
-    /*display: flex;*/
-    /*align-items: center;*/
-
+    text-align: center;
+    color: #4B4B4B;
+    /*flex-direction: column;*/
 }
 
+
 .hero__title {
+    /*text-align: center;*/
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 48px;
-    /* identical to box height, or 109% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -1.6px;
-
-    color: #4B4B4B;
+    /*color: #4B4B4B;*/
 }
 
 .hero__text {
-
+    /*text-align: center;*/
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
+    /*color: #4B4B4B;*/
+    margin-top: 22px;
+}
 
+.hero-links {
+    padding-top: 36px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+}
 
-    color: #4B4B4B;
 
+.hero-link__sing {
+    text-transform: uppercase;
+}
+
+.hero-link__more {
+    margin-left: 18px;
+    background-color: transparent;
+    border-color: #4B4B4B;
+}
+
+/**-----Plan-----**/
+
+.plan {
+    height: 680px;
+    background-color: #F6F6F6;
+}
+
+.plan .container{
+    flex-direction: column;
+}
+
+.plan__title{
+    padding-top: 68px;
+
+}
+
+
+.plan-items{
+    max-width: 946px;
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.plan__card{
+    height: 396px;
+    width: 270px;
+    border-radius: 8px;
+    background-color: burlywood;
 }

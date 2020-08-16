@@ -224,7 +224,7 @@ a {
     border-color: #4B4B4B;
 }
 
-/**-----Plan-----**/
+/**----------Plan----------**/
 
 .plan {
     height: 680px;
@@ -266,7 +266,7 @@ text-align: center;
 }
 
 .plan__card-type{
-    padding-top: 41px;
+    margin-top: 41px;
     text-transform: uppercase;
     display: block;
     /* text-align: center; */
@@ -283,7 +283,7 @@ color: #EBCB80;
 }
 
 .plan__card-price{
-    padding-top: 30px;
+    margin-top: 30px;
     display: block;
     /* text-align: center; */
     font-family: Montserrat;
@@ -314,7 +314,7 @@ font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-
+color:white;
 }
 
 .gold-card .plan__card-time{
@@ -394,6 +394,9 @@ background-color: #4B4B4B;
 color: white;
 }
 
+.gold-card .plan__card-time{
+    color:#4B4B4B;
+}
 
 .project{
     height: 793px;
@@ -402,7 +405,96 @@ color: white;
 
 
 
+/**----------Project----------**/
 
+.project__title{
+    margin-top: 45px;
+}
+
+.project .container{
+    flex-direction: column;
+}
+
+.design-choice{
+    width:85%;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-around;
+    /* justify-items: center; */
+    /* align-content: ; */
+}
+
+.design__radio{
+    display: none;
+}
+
+.design__lable{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.design__radio:checked + .design__lable{
+    font-weight: bold;
+}
+
+.progect-items{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 615px;
+}
+
+
+.progect-card{
+width: 262px;
+height: 262px;
+/* background-color: #EBCB80; */
+/* margin-top: 27px; */
+border-radius: 8px 8px 0px 0px;
+}
+
+.progect-card__info{
+    color:#7D7D7D;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: space-between;
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 24px;
+}
+
+
+
+.progect-card__info-item::before{
+position: relative;
+    left: -6px;
+/* background-color: aqua; */
+}
+
+
+
+/**----------Team----------**/
+
+
+.team{
+    background-color: #F6F6F6;
+}
+
+.team__title{
+    margin-top: 54px;
+}
+
+/**-------------------------------For screen: (1200px-768px)-------------------------------**/
 
 
 @media  (max-width:1199px) and (min-width:768px) {
@@ -489,6 +581,14 @@ margin: 16px 0;
 }
 
 
+
+/**----------Plan----------**/
+
+.plan{
+    height: 488px;
+}
+
+
 .plan__title{
     padding-top: 56px;
 }
@@ -496,6 +596,38 @@ margin: 16px 0;
 
 .plan-items{
     margin-top: 32px;
+}
+
+
+.plan__card{
+    height: 280px;
+    width: 170px;
+}
+
+
+.plan__card-type{
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+.plan__card-price{
+    font-size: 36px;
+    margin-top: 12px;
+}
+
+.plan__card-time{
+    font-size: 12px;
+    padding: 0;
+}
+
+.plan__card-description{
+    font-size: 11px;
+}
+
+.plan__purchase-link{
+    margin-top: 16px;
+    height: 40px;
+    /* width: 120px; */
 }
 
     }

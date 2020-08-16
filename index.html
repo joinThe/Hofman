@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hofman</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
           integrity="sha512-uBLaY+6crwV4JAHILx0HWvYncrX7TXL770hqxly0ZsQ199v4lr2yNB2jiPMoxNajFPHSQnU80B1O8dJLujWZMg=="
@@ -13,6 +14,7 @@
           crossorigin="anonymous"/>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="">
+    <link name="me" >
 </head>
 <body>
 <header class="header">
@@ -42,7 +44,15 @@
                     </li>
                 </ul>
             </div>
+             <div class="burger">
+                 <label for="todo">
+            <div class="burger-unit"></div>
+            <div class="burger-unit"></div>
+            <div class="burger-unit"></div>
+        </label>
         </div>
+        </div>
+       
     </nav>
 
     <section class="hero">
@@ -64,20 +74,69 @@
 
     </section>
 
-    <section class="plan">
-        <div class="container">
-            <h1 class="section__title plan__title">Choose Your Plan</h1>
-            <div class="plan-items">
-                <div class="plan__card">
 
-                </div>
-                <div class="plan__card"></div>
-                <div class="plan__card"></div>
-            </div>
-        </div>
-
-    </section>
 </header>
+
+<section class="plan">
+    <div class="container">
+        <div class="plan_content">
+        <h1 class="section__title plan__title">Choose Your Plan</h1>
+        <div class="plan-items">
+            <section class="plan__card silver-card">
+                <div class="card-opacity"></div>
+                <span class="plan__card-type">Silver</span>
+                <span class="plan__card-price">49</span>
+                <span class="plan__card-time">Year</span>
+                <span class="plan__card-description">Personal Account</span>
+                <span class="plan__card-description">25 GB Discspace</span>
+                <span class="plan__card-description">50 Uploads per day</span>
+                <div class="plan__purchase-link">
+                <a href="#" class="link_and_button">
+                    Purchase
+                </a>
+            </div>
+            </section>
+            <section class="plan__card gold-card">
+                <div class="card-opacity"></div>
+                <span class="plan__card-type">Gold</span>
+                <span class="plan__card-price">99</span>
+                <span class="plan__card-time">Year</span>
+                <span class="plan__card-description">Personal Account</span>
+                <span class="plan__card-description">25 GB Discspace</span>
+                <span class="plan__card-description">500 Uploads per day</span>
+                <div class="plan__purchase-link">
+                <a href="#" class="link_and_button">
+                    Purchase
+                </a>
+
+                
+            </div>
+            </section>
+            <section class="plan__card platinum-card">
+                <div class="card-opacity"></div>
+                <span class="plan__card-type">Platinum</span>
+                <span class="plan__card-price">299</span>
+                <span class="plan__card-time">Year</span>
+                <span class="plan__card-description">Team Account</span>
+                <span class="plan__card-description">500 GB Discspace</span>
+                <span class="plan__card-description">Unlimited Uploads per day</span>
+                <div class="plan__purchase-link">
+                <a href="#" class="link_and_button">
+                    Purchase
+                </a>
+              </div>
+            </section>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="project">
+<h1 class="section__title project__title">Our Projects</h1>
+<input type="radio" name="project" value="product" id="project_product">
+<label for="project_product"></label>
+</section>
+
 
 </body>
 </html>

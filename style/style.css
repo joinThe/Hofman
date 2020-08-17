@@ -5,7 +5,7 @@ html {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fff;
 }
 
@@ -42,7 +42,8 @@ a {
 .link_and_button:hover {
     background-color: darkred;
 }
-.section__title{
+
+.section__title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -72,6 +73,7 @@ a {
     background-size: cover;
     background-position: center;
 }
+
 /**--Nav Menu--**/
 
 .nav-menu {
@@ -81,7 +83,6 @@ a {
     display: flex;
     align-items: center;
 }
-
 
 
 .nav-menu > .container {
@@ -159,18 +160,25 @@ a {
 }
 
 
-.burger{
+.burger {
     display: none;
     margin: 5px;
+
 }
 
-.burger-unit{
+.burger:hover {
+    cursor: pointer;
+}
+
+.burger-unit {
     width: 14px;
     margin-top: 4px;
+    background-color: #4B4B4B;
     border: 1px solid #4B4B4B;
 }
 
-/**--Hero--**/
+
+/**--------------Hero--------------**/
 
 .hero {
     display: flex;
@@ -231,70 +239,70 @@ a {
     background-color: #F6F6F6;
 }
 
-.plan_content{
+.plan_content {
     display: block;
     width: 100%;
     /* flex-direction: column; */
 }
 
-.plan__title{
+.plan__title {
     padding-top: 68px;
-text-align: center;
+    text-align: center;
 }
 
 
-.plan-items{
-   
+.plan-items {
+
     margin-top: 52px;
     display: flex;
     justify-content: space-between;
     justify-items: center;
 }
 
-.plan__card{
+.plan__card {
     z-index: 0;
     height: 396px;
     width: 270px;
     border-radius: 8px;
     background-color: burlywood;
-position: relative;
-    
-font-family: Source Sans Pro;
-font-style: normal;
-text-align: center;
+    position: relative;
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    text-align: center;
 
 }
 
-.plan__card-type{
+.plan__card-type {
     margin-top: 41px;
     text-transform: uppercase;
     display: block;
     /* text-align: center; */
-font-weight: bold;
-font-size: 18px;
-line-height: 27px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
 
-color: #EBCB80;
+    color: #EBCB80;
 
 }
 
-.gold-card .plan__card-type{
+.gold-card .plan__card-type {
     color: #4B4B4B;
 }
 
-.plan__card-price{
+.plan__card-price {
     margin-top: 30px;
     display: block;
     /* text-align: center; */
     font-family: Montserrat;
-font-style: normal;
+    font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 48px;
     color: white;
 }
 
-.plan__card-price::before{
+.plan__card-price::before {
     content: "$ ";
     font-size: 24px;
     line-height: 29px;
@@ -303,25 +311,25 @@ font-style: normal;
     text-align: left;
 }
 
-.gold-card .plan__card-price{
+.gold-card .plan__card-price {
     color: #4B4B4B;
 }
 
-.plan__card-time{
+.plan__card-time {
     padding: 15px 0 23px;
     display: block;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-color:white;
+    color: white;
 }
 
-.gold-card .plan__card-time{
+.gold-card .plan__card-time {
     color: #4B4B4B;
 }
 
-.plan__card-description{
+.plan__card-description {
     display: block;
     /* text-align: center; */
     font-weight: normal;
@@ -331,21 +339,21 @@ color:white;
 }
 
 
-.gold-card .plan__card-description{
+.gold-card .plan__card-description {
 
     color: #4B4B4B;
 }
 
 
-.plan__purchase-link{
-/* display: inline-block; */
-text-transform: uppercase;
+.plan__purchase-link {
+    /* display: inline-block; */
+    text-transform: uppercase;
     margin-top: 30px;
-display: inline-block;
-/* width: 200px; */
+    display: inline-block;
+    /* width: 200px; */
 }
 
-.card-opacity{
+.card-opacity {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -354,69 +362,80 @@ display: inline-block;
     z-index: -1;
 }
 
-.silver-card{
+.silver-card {
     background: #4B4B4B;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
-
-.silver-card .card-opacity{ 
+.silver-card .card-opacity {
     background: linear-gradient(224.09deg, rgba(255, 255, 255, 0.7) 5.13%, rgba(255, 255, 255, 7e-05) 90.88%);
     background-blend-mode: soft-light;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+
 }
 
-.gold-card{
+.gold-card {
     background: #EBCB80;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.gold-card.card-opacity{
+.gold-card .card-opacity {
+    border-radius: 8px;
 
     background: linear-gradient(225deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
     background-blend-mode: soft-light;
 }
 
-.platinum-card{
+.platinum-card {
     background: #4B4B4B;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.platinum-card .card-opacity{
+.platinum-card .card-opacity {
     background: linear-gradient(223.49deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
     background-blend-mode: multiply;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+
 }
 
-.gold-card .link_and_button{
-background-color: #4B4B4B;
-color: white;
+.gold-card .link_and_button {
+    background-color: #4B4B4B;
+    color: white;
 }
 
-.gold-card .plan__card-time{
-    color:#4B4B4B;
+.gold-card .plan__card-time {
+    color: #4B4B4B;
 }
 
-.project{
+.choice_plan__radio{
+    display: none;
+}
+
+.phone_choice_plan{
+    display: none;
+}
+
+/**----------Project----------**/
+
+.project {
     height: 793px;
     text-align: center;
 }
 
 
-
-/**----------Project----------**/
-
-.project__title{
+.project__title {
     margin-top: 45px;
 }
 
-.project .container{
+.project .container {
     flex-direction: column;
 }
 
-.design-choice{
-    width:85%;
+.design-choice {
+    width: 85%;
     margin-top: 33px;
     display: flex;
     justify-content: space-around;
@@ -424,11 +443,11 @@ color: white;
     /* align-content: ; */
 }
 
-.design__radio{
+.design__radio {
     display: none;
 }
 
-.design__lable{
+.design__label {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
@@ -437,11 +456,11 @@ color: white;
     text-transform: uppercase;
 }
 
-.design__radio:checked + .design__lable{
+.design__radio:checked + .design__label {
     font-weight: bold;
 }
 
-.progect-items{
+.project-items {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -450,275 +469,349 @@ color: white;
 }
 
 
-.progect-card{
-width: 262px;
-height: 262px;
-/* background-color: #EBCB80; */
-/* margin-top: 27px; */
-border-radius: 8px 8px 0px 0px;
+.project-card {
+    width: 262px;
+    height: 262px;
+    /* background-color: #EBCB80; */
+    /* margin-top: 27px; */
+    border-radius: 8px 8px 0px 0px;
 }
 
-.progect-card__info{
-    color:#7D7D7D;
+.project-card__info {
+    color: #7D7D7D;
     margin-top: 18px;
     display: flex;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
     align-content: space-between;
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 24px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
 }
 
 
-
-.progect-card__info-item::before{
-position: relative;
+.project-card__info-item::before {
+    position: relative;
     left: -6px;
-/* background-color: aqua; */
+    /* background-color: aqua; */
 }
-
 
 
 /**----------Team----------**/
 
 
-.team{
+.team {
     background-color: #F6F6F6;
 }
 
-.team__title{
+.team__title {
     margin-top: 54px;
 }
 
 /**-------------------------------For screen: (1200px-768px)-------------------------------**/
 
 
-@media  (max-width:1199px) and (min-width:768px) {
+@media (max-width: 1199px) and (min-width: 768px) {
 
 
-/**-----common(1200-768)-----**/
-
-    .container{
+    /**-----common(1200-768)-----**/
+    .container {
         max-width: 768px;
     }
-    
-    .section__title{
+
+    .section__title {
         font-size: 32px;
-line-height: 40px;
+        line-height: 40px;
     }
 
-.link_and_button{
-    font-size: 11px;
-line-height: 13px;
-min-width: 148px;
-}
+    .link_and_button {
+        font-size: 11px;
+        line-height: 13px;
+        min-width: 148px;
+        padding: 14px 2px;
+    }
 
-    
-/**-----Header(1200-768)-----**/ 
 
-    .nav-menu{
+    /**-----Header(1200-768)-----**/
+    .nav-menu {
         height: 105px;
     }
-    
-    
-    .nav-logo__text{
+
+
+    .nav-logo__text {
         font-size: 2.4rem;
-      font-size: 24px;
-    
-    line-height: 2.9rem;
-    line-height: 29px;
+        font-size: 24px;
+
+        line-height: 2.9rem;
+        line-height: 29px;
     }
-    
-    .nav-references{
+
+    .nav-references {
         margin-left: 167px;
-        
+
     }
 
-.nav-reference-item{
-    margin-left: 36px;
-}
+    .nav-reference-item {
+        margin-left: 36px;
+    }
 
-    .nav-reference{
+    .nav-reference {
         font-size: 12px;
-    line-height: 16px;
+        line-height: 16px;
     }
-    
-    .social-references{
+
+    .social-references {
         margin-left: 100px;
     }
-    
-.social-reference-item{
-    margin-left: 21px;
-}
 
-.social-reference{
-    font-size: 16px;
+    .social-reference-item {
+        margin-left: 21px;
+    }
 
-}
-
-
-
-/**-----hero(1200-768)-----**/ 
-
-
-.hero__text{
-    margin-top: 11px;
-    font-size: 11px;
-line-height: 16px;
-}
-
-.hero-links{
-    padding-top: 36px;
-    flex-direction: column;
-}
-
-.hero-link__more {
-margin: 16px 0;
-}
-
-
-
-/**----------Plan----------**/
-
-.plan{
-    height: 488px;
-}
-
-
-.plan__title{
-    padding-top: 56px;
-}
-
-
-.plan-items{
-    margin-top: 32px;
-}
-
-
-.plan__card{
-    height: 280px;
-    width: 170px;
-}
-
-
-.plan__card-type{
-    font-size: 12px;
-    margin-top: 22px;
-}
-
-.plan__card-price{
-    font-size: 36px;
-    margin-top: 12px;
-}
-
-.plan__card-time{
-    font-size: 12px;
-    padding: 0;
-}
-
-.plan__card-description{
-    font-size: 11px;
-}
-
-.plan__purchase-link{
-    margin-top: 16px;
-    height: 40px;
-    /* width: 120px; */
-}
+    .social-reference {
+        font-size: 16px;
 
     }
 
 
-    
+    /**-----hero(1200-768)-----**/
+    .hero__text {
+        margin-top: 11px;
+        font-size: 11px;
+        line-height: 16px;
+    }
 
-@media  (max-width:767px) and (min-width:320px) {
+    .hero-links {
+        padding-top: 36px;
+        flex-direction: column;
+    }
+
+    .hero-link__more {
+        margin: 16px 0;
+    }
 
 
+    /**----------Plan(1200-768)----------**/
+    .plan {
+        height: 488px;
+    }
 
-/**-----common(<768)-----**/
-.container{
-   width: 100%;
-    padding: 0 18px;
-    /* background-color: tomato ; */
+
+    .plan__title {
+        padding-top: 56px;
+    }
+
+
+    .plan-items {
+        margin-top: 32px;
+    }
+
+
+    .plan__card {
+        height: 280px;
+        width: 170px;
+    }
+
+
+    .plan__card-type {
+        font-size: 12px;
+        margin-top: 22px;
+        letter-spacing: 0.666667px;
+    }
+
+    .plan__card-price {
+        font-size: 36px;
+        line-height: 28px;
+        margin-top: 22px;
+    }
+
+    .plan__card-price:before {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .plan__card-time {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .plan__card-description {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .plan__purchase-link {
+        margin-top: 16px;
+    }
+
+
 }
 
 
-.section__title{
-    font-size: 20px;
-line-height: 24px;
-}
-
-.link_and_button{
-    height: 32px;
-    padding: 5px 5px;
-    min-width: 130px;
-    font-size: 11px;
-line-height: 13px;
-}
-
-    
-/**-----Header(<768)-----**/ 
-
-.header{
-    background: linear-gradient(217.09deg, #FFFFFF 0%, #DADADA 100%);
-}
-
-.nav-menu{
-    height: 105px;
-}
-
-.nav-logo__text{
-    font-size: 24px;
-line-height: 29px;
-}
-.nav-references{
-    display: none;
-}
-
-.social-references{
-    display: none;
-}
-
-.nav-menu .container{
-    justify-content: space-between;
-}
-
-.burger{
-    display: block;
-}
+@media (max-width: 767px) and (min-width: 320px) {
 
 
-/**-----Hero(<768)-----**/ 
+    /**-----common(<768)-----**/
+    .container {
+        width: 100%;
+        padding: 0 18px;
+        /* background-color: tomato ; */
+    }
 
-.hero{
-   
-}
 
-.hero__text{
-    margin-top: 15px;
-    font-size: 11px;
-line-height: 16px;
-}
+    .section__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
 
-.hero-links{
-    padding-top: 28px;
-    flex-direction: column;
-}
+    .link_and_button {
+        height: 32px;
+        padding: 5px 5px;
+        min-width: 130px;
+        font-size: 11px;
+        line-height: 13px;
+    }
 
-.hero-link__more {
-margin: 16px 0;
-}
 
-.plan{
-    display: none;
-}
+    /**-----Header(<768)-----**/
+    .header {
+        background: linear-gradient(217.09deg, #FFFFFF 0%, #DADADA 100%);
+    }
 
-.project{
-    display: none;
-}
+    .nav-menu {
+        height: 105px;
+    }
+
+    .nav-logo__text {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .nav-references {
+        display: none;
+    }
+
+    .social-references {
+        display: none;
+    }
+
+    .nav-menu .container {
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger__input {
+        display: none;
+    }
+
+    /**------------Hero(<768)------------**/
+    .hero {
+
+    }
+
+    .hero__text {
+        margin-top: 15px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .hero-links {
+        padding-top: 28px;
+        flex-direction: column;
+    }
+
+    .hero-link__more {
+        margin: 16px 0;
+    }
+
+    /**------------Plan(<768)------------**/
+    .plan {
+max-height: 480px;
+
+    }
+
+
+    .plan__title {
+        padding-top: 52px;
+    }
+
+
+    .plan-items {
+        /*margin-top: 32px;*/
+        position: relative;
+        margin: 32px auto;
+    }
+
+
+    .plan__card {
+        width: 190px;
+        height: 248px;
+        position: absolute;
+        /*top: 50px;*/
+        left: 30%;
+    }
+
+    .silver-card {
+        top: 20px;
+transform: scale(0.842);
+        z-index: 2;
+    }
+
+    .gold-card{
+        top: 50px;
+        z-index: 3;
+    }
+
+    .platinum-card{
+        /*top: 30px;*/
+        transform: scale(0.736);
+z-index: 0;
+    }
+
+    .plan__card-type {
+        font-size: 12px;
+        margin-top: 14px;
+        letter-spacing: 0.666667px;
+    }
+
+    .plan__card-price {
+        font-size: 36px;
+        line-height: 28px;
+        margin-top: 22px;
+    }
+
+    .plan__card-price:before {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .plan__card-time {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .plan__card-description {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .plan__purchase-link {
+        margin-top: 16px;
+    }
+
+    .phone_choice_plan{
+        display: block;
+    }
+
+    /**------------Project(<768)------------**/
+    .project {
+
+    }
 
 }

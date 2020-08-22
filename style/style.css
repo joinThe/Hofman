@@ -58,13 +58,18 @@ a {
     max-width: 117rem;
     margin: 0 auto;
     /*display: inline-block;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 
 /**-----Header-----**/
+
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .header {
     height: 100vh;
@@ -410,11 +415,11 @@ a {
     color: #4B4B4B;
 }
 
-.choice_plan__radio{
+.choice_plan__radio {
     display: none;
 }
 
-.phone_choice_plan{
+.phone_choice_plan {
     display: none;
 }
 
@@ -435,7 +440,7 @@ a {
 }
 
 .design-choice {
-    width: 85%;
+    padding: 0px 100px;
     margin-top: 33px;
     display: flex;
     justify-content: space-around;
@@ -465,13 +470,14 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 615px;
+    min-height: 615px;
 }
 
 
 .project-card {
     width: 262px;
     height: 262px;
+    /*margin-top: 27px;*/
     /* background-color: #EBCB80; */
     /* margin-top: 27px; */
     border-radius: 8px 8px 0px 0px;
@@ -503,14 +509,113 @@ a {
 /**----------Team----------**/
 
 
-.team {
+.team{
     background-color: #F6F6F6;
 }
 
-.team__title {
-    margin-top: 54px;
+.team__title{
+    padding-top: 54px;
 }
 
+.team-items{
+    margin-top: 53px;
+    padding-bottom: 103px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.team-card{
+    display: flex;
+    font-family: Source Sans Pro;
+    color: #4B4B4B;
+    width: 33%;
+}
+
+.team-card__img{
+
+}
+
+.team-card__text{
+    margin-left: 17px;
+    text-align: left;
+}
+
+.team-card__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.team-card__position{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.team-card__description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+/**----------Contact us----------**/
+
+.contact__title{
+    margin-top: 92px;
+
+}
+
+.contact__sub-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contact-content{
+    display: flex;
+    margin-top: 65px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.get-in-touch{
+    text-align: left;
+}
+
+
+
+
+.contact-window{
+    height: 414px;
+    width: 536px;
+    border: 2px solid #E6E6E6;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.credits-and-follow{
+    width: 263px;
+}
+
+.credits__title{
+
+}
+
+.follow__title {
+
+
+}
 /**-------------------------------For screen: (1200px-768px)-------------------------------**/
 
 
@@ -607,6 +712,7 @@ a {
 
     .plan-items {
         margin-top: 32px;
+        justify-content: space-around;
     }
 
 
@@ -647,6 +753,39 @@ a {
         margin-top: 16px;
     }
 
+
+    /**----------Projects(1200-768)----------**/
+
+    .project{
+       height: 920px;
+
+    }
+
+    .design-choice{
+        padding: 0;
+    }
+
+    .design__label{
+        font-size: 12px;
+        line-height: 16px;
+
+    }
+
+    .project-items{
+       justify-content: left;
+        /*margin-left: -30px;*/
+    }
+
+    .project-card{
+        width: 220px;
+        height: 224px;
+        margin-left: 30px;
+        /*margin: 0 auto;*/
+    }
+
+    .project-card__info{
+        font-size: 11px;
+    }
 
 }
 
@@ -732,7 +871,7 @@ a {
 
     /**------------Plan(<768)------------**/
     .plan {
-max-height: 480px;
+        max-height: 480px;
 
     }
 
@@ -759,19 +898,19 @@ max-height: 480px;
 
     .silver-card {
         top: 20px;
-transform: scale(0.842);
+        transform: scale(0.842);
         z-index: 2;
     }
 
-    .gold-card{
+    .gold-card {
         top: 50px;
         z-index: 3;
     }
 
-    .platinum-card{
+    .platinum-card {
         /*top: 30px;*/
         transform: scale(0.736);
-z-index: 0;
+        z-index: 0;
     }
 
     .plan__card-type {
@@ -805,7 +944,7 @@ z-index: 0;
         margin-top: 16px;
     }
 
-    .phone_choice_plan{
+    .phone_choice_plan {
         display: block;
     }
 

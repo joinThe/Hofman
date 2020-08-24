@@ -111,13 +111,11 @@ a {
     color: #7D7D7D;
 }
 
-
 .nav-references {
     display: flex;
     align-items: center;
     margin-left: 290px;
 }
-
 
 .nav-reference-item {
     display: inline-block;
@@ -164,7 +162,6 @@ a {
     color: #4B4B4B;
 }
 
-
 .burger {
     display: none;
     margin: 5px;
@@ -200,7 +197,6 @@ a {
     color: #4B4B4B;
     /*flex-direction: column;*/
 }
-
 
 .hero__title {
     /*text-align: center;*/
@@ -349,7 +345,6 @@ a {
     color: #4B4B4B;
 }
 
-
 .plan__purchase-link {
     /* display: inline-block; */
     text-transform: uppercase;
@@ -433,6 +428,11 @@ a {
 
 .project__title {
     margin-top: 45px;
+}
+
+.phone_project_select {
+    display: none;
+    margin-top: 22px;
 }
 
 .project .container {
@@ -568,7 +568,7 @@ a {
 
 
 .contact .container {
-    height: 720px;
+    min-height: 720px;
 }
 
 .contact__title {
@@ -615,13 +615,12 @@ a {
 
 }
 
-.phone-icon::before {
-    position: relative;
-    top: 23px;
-}
-
 .touch-phones {
     display: inline-block;
+}
+
+.phone-number__separator {
+    display: none;
 }
 
 .form {
@@ -698,7 +697,6 @@ a {
 }
 
 
-
 .follow .social-reference {
     width: 33%;
     color: #4B4B4B;
@@ -730,9 +728,10 @@ a {
 /**----------Footer----------**/
 
 
-.footer{
+.footer {
     background-color: #F6F6F6;
     height: 450px;
+    /*todo: normal height*/
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
@@ -740,38 +739,38 @@ a {
     line-height: 24px;
 }
 
-.footer-columns{
+.footer-columns {
     padding-top: 43px;
     display: flex;
     justify-content: space-between;
 }
 
-.footer__item{
+.footer__item {
     width: 262px;
     text-align: left;
 }
 
-.footer__item .sub-title{
+.footer__item .sub-title {
     text-transform: uppercase;
 }
 
-.footer__item-links{
+.footer__item-links {
     border-top: 1px solid #4B4B4B;
     padding-top: 13px;
 
 
 }
 
-.footer__link:nth-child(n+2){
+.footer__link:nth-child(n+2) {
     margin-top: 11px;
 }
 
-.footer__link a{
+.footer__link a {
     color: #4B4B4B;
 
 }
 
-.footer-bottom{
+.footer-bottom {
     margin-top: 43px;
     padding: 43px 0;
     display: flex;
@@ -864,8 +863,6 @@ a {
 
 
     /**----------Plan(1200-768)----------**/
-
-
     .plan {
         height: 488px;
     }
@@ -917,15 +914,14 @@ a {
     }
 
 
-
     .plan__purchase-link {
         margin-top: 16px;
+        z-index: 3;
     }
 
-    .plan .link_and_button{
+    .plan .link_and_button {
         min-width: 120px;
     }
-
 
 
     /**----------Projects(1200-768)----------**/
@@ -963,12 +959,13 @@ a {
 }
 
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 760px)and (min-width: 320px) {
 
 
     /**-----common(<768)-----**/
     .container {
         width: 100%;
+        /*width: 320px;*/
         padding: 0 18px;
         /* background-color: tomato ; */
     }
@@ -1048,7 +1045,7 @@ a {
 
     }
 
-    .plan_content{
+    .plan_content {
         display: flex;
         flex-direction: column;
     }
@@ -1075,7 +1072,6 @@ a {
     }
 
 
-
     .silver-card {
         position: absolute;
 
@@ -1091,7 +1087,7 @@ a {
         /*position: relative;*/
     }
 
-    .gold-card .plan__card-type{
+    .gold-card .plan__card-type {
         margin: 0;
         padding-top: 14px;
     }
@@ -1135,38 +1131,328 @@ a {
         margin-top: 16px;
     }
 
-    .plan__card .link_and_button{
+    .plan__card .link_and_button {
         min-width: 140px;
     }
-
 
 
     .phone_choice_plan {
         display: flex;
         margin: 0 auto;
-
-
     }
 
-    .phone_choice_plan .link_and_button{
+    .phone_choice_plan .link_and_button {
         min-width: 80px;
         font-size: 12px;
+        border: none;
         line-height: 16px;
         height: 24px;
         background-color: transparent;
         text-transform: uppercase;
         font-weight: bold;
+        position: relative;
+        transition: color 0.5s linear 5ms, background-color 0.5s linear 5ms;
     }
 
-    .choice_plan__radio:checked +.link_and_button{
-background-color: #EBCB80;
+    .silver-radio {
 
+        /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);*/
+    }
+
+    .gold-radio {
+
+    }
+
+    .silver-radio:checked + .link_and_button {
+        background-color: #4B4B4B;
+        color: white;
+
+    }
+
+    .phone_choice_plan .card-opacity {
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .phone_choice_plan label {
+        z-index: 2;
+    }
+
+    .silver-radio:checked + .link_and_button .card-opacity {
+        background: linear-gradient(224.09deg, rgba(255, 255, 255, 0.7) 5.13%, rgba(255, 255, 255, 7e-05) 90.88%);
+        background-blend-mode: soft-light;
+    }
+
+    .gold-radio:checked + .link_and_button {
+        background-color: #EBCB80;
+    }
+
+    .gold-radio:checked + .link_and_button .card-opacity {
+        background: linear-gradient(225deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
+        background-blend-mode: soft-light;
+    }
+
+
+    .platinum-radio:checked + .link_and_button {
+        background-color: #4B4B4B;
+        color: white;
+    }
+
+    .platinum-radio:checked + .link_and_button .card-opacity {
+        background: linear-gradient(223.49deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
+        background-blend-mode: multiply;
     }
 
 
     /**------------Project(<768)------------**/
     .project {
 
+
     }
 
+    .phone_project_select {
+        display: inline;
+        border: 1px solid #4B4B4B;
+        border-radius: 48px;
+        min-width: 142px;
+        height: 24px;
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #4B4B4B;
+        text-align: center;
+    }
+
+
+    .phone_project_select span {
+        margin-left: 10px;
+    }
+
+    .design-choice {
+        display: none;
+    }
+
+    .project-card__info {
+        display: none;
+    }
+
+    .project-card {
+        width: 140px;
+        height: 107px;
+    }
+
+    .project-card img{
+        border-radius: 4px;
+    }
+
+
+    /**------------Team(<768)------------**/
+    .team {
+        /*height: 780px;*/
+
+    }
+
+    .team-items {
+        flex-direction: column;
+        justify-content: space-between;
+        /*margin-bottom: 71px;*/
+        height: 600px;
+        width: 100%;
+        /*margin: 0;*/
+    }
+
+    .team-card {
+        width: 270px;
+    }
+
+    .team-card__img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .team-card__name {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .team-card__position {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .team-card__description {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+
+    /**------------Contact us(<768)------------**/
+    .contact__title {
+        padding-top: 55px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 0 25px;
+    }
+
+    .contact-window {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        order: -1;
+        height: auto;
+        /*todo:normal height*/
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 224px;
+    }
+
+    .data {
+    }
+
+    .message {
+
+    }
+
+    .form-label {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .input-field {
+        width: 224px;
+        height: 63px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .contact__text-input {
+        width: 108px;
+        height: 24px;
+    }
+
+    .input-field {
+
+    }
+
+    .contact .link_and_button {
+        padding: 0;
+        min-width: 112px;
+        height: 25px;
+        margin: 16px auto;
+    }
+
+    .get-in-touch {
+        margin-top: 40px;
+        width: auto;
+    }
+
+    .sub-title {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .touch-content {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 11px;
+    }
+
+    .touch__icon {
+        font-size: 11px;
+
+    }
+
+    .phone-icon::before {
+        position: relative;
+        top: -2px;
+    }
+
+    .touch__phone {
+        display: inline-block;
+    }
+
+    .phone-number__separator {
+        display: inline;
+    }
+
+    .credits-and-follow{
+        max-width: none;
+    }
+
+    .credits{
+        margin-top: 27px;
+    }
+
+    .follow{
+        margin-top: 11px;
+        width: auto;
+    }
+
+    .follow-content{
+        width: 100%;
+        height: auto;
+        margin: 10px 0 30px;
+        justify-content: start;
+    }
+
+    .follow-content .social-reference{
+        width: 10%;
+        font-size: 13px;
+    }
+
+
+    /**------------Footer(<768)------------**/
+
+
+    .footer{
+        font-size: 11px;
+     height: auto;
+        line-height: 13px;
+    }
+
+    .footer-columns{
+        padding:0;
+        flex-wrap: wrap;
+    }
+
+    .footer__item{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .footer__item-links{
+        width: 80%;
+    }
+
+    .footer-bottom{
+        padding: 0;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .footer-bottom .social-references{
+        order: -1;
+        margin: 24px 0 28px;
+        display: inline;
+        justify-content: center;
+    }
+
+   .footer-bottom .social-reference{
+        font-size: 17px;
+    }
+
+   .footer-bottom .copyright{
+       margin-bottom: 28px;
+   }
 }

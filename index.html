@@ -128,16 +128,22 @@
             <!----------------only phone---------------->
 
             <div class="phone_choice_plan">
-                <input class="choice_plan__radio" checked="true" type="radio" name="plan" id="silver_plan">
-                <label class="link_and_button" for="silver_plan">Silver</label>
+                <input class="choice_plan__radio silver-radio" checked="true" type="radio" name="plan" id="silver_plan">
+                <div class="link_and_button">
+                    <div class="card-opacity"></div>
+                    <label  for="silver_plan">Silver</label>
+                </div>
+                <input class="choice_plan__radio gold-radio" type="radio" name="plan" id="gold_plan">
+                <div class="link_and_button">
+                    <div class="card-opacity"></div>
+                    <label  for="gold_plan">Gold</label>
+                </div>
 
-                <input class="choice_plan__radio" type="radio" name="plan" id="gold_plan">
-                <label class="link_and_button" for="gold_plan">Gold</label>
-
-
-                <input class="choice_plan__radio" type="radio" name="plan" id="platinum_plan">
-                <label class="link_and_button" for="platinum_plan">Platinum</label>
-
+                <input class="choice_plan__radio platinum-radio" type="radio" name="plan" id="platinum_plan">
+                <div class="link_and_button ">
+                    <div class="card-opacity"></div>
+                    <label  for="platinum_plan">Platinum</label>
+                </div>
             </div>
         </div>
     </div>
@@ -146,6 +152,15 @@
 <section class="project">
     <div class="container">
         <h1 class="section__title project__title">Our Projects</h1>
+        <!----------------only phone---------------->
+        <select class="phone_project_select">
+            <option><span>Product Design</span></option>
+            <option>Graphic Design</option>
+            <option>Interior Design</option>
+            <option>Web Design</option>
+            <option>App Design</option>
+        </select>
+
         <div class="design-choice">
 
             <input class="design__radio" checked="true" type="radio" name="project" value="product" id="product_design">
@@ -346,13 +361,13 @@
                     <i class="fas fa-envelope touch__icon"></i>
                     contact@hofmannui.net
                 </span>
-                <div class="test">
+                <div class="touch-content">
                     <i class="fas fa-phone-alt touch__icon phone-icon"></i>
-                    <div class="touch-phones touch-content">
+                    <div class="touch-phones ">
 
-                        <p class="touch__phone"> 793-891-7938</p>
+                        <p class="touch__phone"> 793-891-7938</p><span class="phone-number__separator">, </span>
 
-                        <p class="touch__phone">512-915-5628</p>
+                        <p class="touch__phone">512-915-5628</p><span class="phone-number__separator">, </span>
 
                         <p class="touch__phone">952-775-6021</p>
                     </div>

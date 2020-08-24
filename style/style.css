@@ -22,7 +22,7 @@ a {
     height: 48px;
     min-width: 180px;
     padding: 14px 26px;
-    background-color: burlywood;
+    background-color: #EBCB80;
 
     border: 2px solid transparent;
     box-sizing: border-box;
@@ -65,7 +65,7 @@ a {
 /**-----Header-----**/
 
 
-.header .container{
+.header .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -509,15 +509,15 @@ a {
 /**----------Team----------**/
 
 
-.team{
+.team {
     background-color: #F6F6F6;
 }
 
-.team__title{
+.team__title {
     padding-top: 54px;
 }
 
-.team-items{
+.team-items {
     margin-top: 53px;
     padding-bottom: 103px;
     display: flex;
@@ -526,37 +526,37 @@ a {
     align-content: center;
 }
 
-.team-card{
+.team-card {
     display: flex;
     font-family: Source Sans Pro;
     color: #4B4B4B;
     width: 33%;
 }
 
-.team-card__img{
+.team-card__img {
 
 }
 
-.team-card__text{
+.team-card__text {
     margin-left: 17px;
     text-align: left;
 }
 
-.team-card__name{
+.team-card__name {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
 }
 
-.team-card__position{
+.team-card__position {
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
 }
 
-.team-card__description{
+.team-card__description {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -564,16 +564,18 @@ a {
 }
 
 
-
-
 /**----------Contact us----------**/
 
-.contact__title{
-    margin-top: 92px;
 
+.contact .container {
+    height: 720px;
 }
 
-.contact__sub-title{
+.contact__title {
+    padding-top: 92px;
+}
+
+.sub-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -581,8 +583,10 @@ a {
     line-height: 30px;
 }
 
-.contact-content{
+.contact-content {
+    /*height: 700px;*/
     display: flex;
+    justify-content: space-between;
     margin-top: 65px;
     font-family: Source Sans Pro;
     font-size: 16px;
@@ -590,25 +594,130 @@ a {
     text-align: left;
 }
 
-.get-in-touch{
+.get-in-touch {
     text-align: left;
+    vertical-align: top;
+    max-width: 259px;
+}
+
+.touch-content {
+    margin-top: 23px;
+    display: block;
+}
+
+.touch__icon {
+    margin-right: 12px;
+    line-height: 24px;
+}
+
+.phone-icon {
+    vertical-align: top;
+
+}
+
+.phone-icon::before {
+    position: relative;
+    top: 23px;
+}
+
+.touch-phones {
+    display: inline-block;
+}
+
+.form {
+    margin: 40px auto;
+
+    width: 420px;
+
+}
+
+.form-label {
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+.data {
+    /*margin: 0 auto;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.data__item {
+    width: 204px;
+}
+
+.contact__text-input {
+    height: 36px;
+}
+
+.input-field {
+    width: 100%;
+    margin-top: 17px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    resize: none;
+}
+
+.input-field::placeholder {
+    padding-left: 10px;
+}
+
+.message .form-label {
+    margin-top: 16px;
+}
+
+.message .input-field {
+    height: 120px;
+}
+
+.form .link_and_button {
+    margin: 24px auto;
+    text-transform: uppercase;
+    padding: 15px 75px;
+}
+
+.follow {
+    margin-top: 50px;
+
+}
+
+.follow-content {
+    margin-top: 30px;
+    width: 150px;
+    height: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*justify-items: right;*/
+
+    align-content: space-between;
 }
 
 
 
+.follow .social-reference {
+    width: 33%;
+    color: #4B4B4B;
+}
 
-.contact-window{
+
+.contact-window {
+    margin: 0 40px;
     height: 414px;
     width: 536px;
     border: 2px solid #E6E6E6;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
 }
 
-.credits-and-follow{
-    width: 263px;
+.credits-and-follow {
+    max-width: 263px;
 }
 
-.credits__title{
+.credits__title {
 
 }
 
@@ -616,6 +725,60 @@ a {
 
 
 }
+
+
+/**----------Footer----------**/
+
+
+.footer{
+    background-color: #F6F6F6;
+    height: 450px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-columns{
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item{
+    width: 262px;
+    text-align: left;
+}
+
+.footer__item .sub-title{
+    text-transform: uppercase;
+}
+
+.footer__item-links{
+    border-top: 1px solid #4B4B4B;
+    padding-top: 13px;
+
+
+}
+
+.footer__link:nth-child(n+2){
+    margin-top: 11px;
+}
+
+.footer__link a{
+    color: #4B4B4B;
+
+}
+
+.footer-bottom{
+    margin-top: 43px;
+    padding: 43px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #4B4B4B;
+}
+
 /**-------------------------------For screen: (1200px-768px)-------------------------------**/
 
 
@@ -636,6 +799,7 @@ a {
         font-size: 11px;
         line-height: 13px;
         min-width: 148px;
+        height: 40px;
         padding: 14px 2px;
     }
 
@@ -700,6 +864,8 @@ a {
 
 
     /**----------Plan(1200-768)----------**/
+
+
     .plan {
         height: 488px;
     }
@@ -732,6 +898,7 @@ a {
         font-size: 36px;
         line-height: 28px;
         margin-top: 22px;
+        letter-spacing: -1.3px;
     }
 
     .plan__card-price:before {
@@ -741,7 +908,7 @@ a {
 
     .plan__card-time {
         font-size: 12px;
-        padding: 0;
+        padding: 0 0 7px;
     }
 
     .plan__card-description {
@@ -749,41 +916,47 @@ a {
         line-height: 18px;
     }
 
+
+
     .plan__purchase-link {
         margin-top: 16px;
     }
 
+    .plan .link_and_button{
+        min-width: 120px;
+    }
+
+
 
     /**----------Projects(1200-768)----------**/
-
-    .project{
-       height: 920px;
+    .project {
+        height: 920px;
 
     }
 
-    .design-choice{
+    .design-choice {
         padding: 0;
     }
 
-    .design__label{
+    .design__label {
         font-size: 12px;
         line-height: 16px;
 
     }
 
-    .project-items{
-       justify-content: left;
+    .project-items {
+        justify-content: left;
         /*margin-left: -30px;*/
     }
 
-    .project-card{
+    .project-card {
         width: 220px;
         height: 224px;
         margin-left: 30px;
         /*margin: 0 auto;*/
     }
 
-    .project-card__info{
+    .project-card__info {
         font-size: 11px;
     }
 
@@ -875,6 +1048,10 @@ a {
 
     }
 
+    .plan_content{
+        display: flex;
+        flex-direction: column;
+    }
 
     .plan__title {
         padding-top: 52px;
@@ -884,31 +1061,45 @@ a {
     .plan-items {
         /*margin-top: 32px;*/
         position: relative;
-        margin: 32px auto;
+        margin: 0 auto 90px;
+        display: inline-block;
     }
 
 
     .plan__card {
         width: 190px;
         height: 248px;
-        position: absolute;
+        /*position: absolute;*/
         /*top: 50px;*/
-        left: 30%;
+        /*left: 30%;*/
     }
 
+
+
     .silver-card {
+        position: absolute;
+
         top: 20px;
         transform: scale(0.842);
         z-index: 2;
     }
 
     .gold-card {
+        /*padding-top: 14px;*/
         top: 50px;
         z-index: 3;
+        /*position: relative;*/
+    }
+
+    .gold-card .plan__card-type{
+        margin: 0;
+        padding-top: 14px;
     }
 
     .platinum-card {
-        /*top: 30px;*/
+        position: absolute;
+
+        top: 0px;
         transform: scale(0.736);
         z-index: 0;
     }
@@ -944,9 +1135,34 @@ a {
         margin-top: 16px;
     }
 
-    .phone_choice_plan {
-        display: block;
+    .plan__card .link_and_button{
+        min-width: 140px;
     }
+
+
+
+    .phone_choice_plan {
+        display: flex;
+        margin: 0 auto;
+
+
+    }
+
+    .phone_choice_plan .link_and_button{
+        min-width: 80px;
+        font-size: 12px;
+        line-height: 16px;
+        height: 24px;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .choice_plan__radio:checked +.link_and_button{
+background-color: #EBCB80;
+
+    }
+
 
     /**------------Project(<768)------------**/
     .project {

@@ -125,20 +125,20 @@
                 </section>
             </div>
 
-<!----------------only phone---------------->
+            <!----------------only phone---------------->
+
             <div class="phone_choice_plan">
                 <input class="choice_plan__radio" checked="true" type="radio" name="plan" id="silver_plan">
-                <label class="silver-card link_and_button" for="gold_plan">Silver</label>
+                <label class="link_and_button" for="silver_plan">Silver</label>
 
                 <input class="choice_plan__radio" type="radio" name="plan" id="gold_plan">
-                <label class="gold-card link_and_button" for="gold_plan">Gold</label>
+                <label class="link_and_button" for="gold_plan">Gold</label>
 
 
                 <input class="choice_plan__radio" type="radio" name="plan" id="platinum_plan">
-                <label class="platinum-card link_and_button" for="gold_plan">Platinum</label>
+                <label class="link_and_button" for="platinum_plan">Platinum</label>
 
             </div>
-
         </div>
     </div>
 </section>
@@ -286,7 +286,8 @@
                         Vera Hopkins
                     </h3>
                     <p class="team-card__position">UX Lead</p>
-                    <p class="team-card__description">Differentiate Yourself And Attract More Attention Sales And Profits</p>
+                    <p class="team-card__description">Differentiate Yourself And Attract More Attention Sales And
+                        Profits</p>
                 </div>
             </div>
 
@@ -329,7 +330,6 @@
 </section>
 
 
-
 <section class="contact">
     <div class="container">
         <h1 class="section__title contact__title">Contact Us</h1>
@@ -337,50 +337,175 @@
         <div class="contact-content">
 
             <div class="get-in-touch">
-                <h2 class="touch__title contact__sub-title">
+                <h2 class="touch__title sub-title">
                     Get In Touch
                 </h2>
-                <p class="touch__adress">2300 W Arbutus Dr Citrus Springs, FL 34434, USA</p>
 
-                <p class="touch__email">
+                <span class="touch__address touch-content"><i class="fas fa-map-marker-alt touch__icon"></i>2300 W Arbutus Dr Citrus Springs, FL 34434, USA</span>
+                <span class="touch__email touch-content">
+                    <i class="fas fa-envelope touch__icon"></i>
                     contact@hofmannui.net
-                </p>
+                </span>
+                <div class="test">
+                    <i class="fas fa-phone-alt touch__icon phone-icon"></i>
+                    <div class="touch-phones touch-content">
 
-                <p class="touch__phone">793-891-7938</p>
+                        <p class="touch__phone"> 793-891-7938</p>
 
-                <p class="touch__phone">512-915-5628</p>
+                        <p class="touch__phone">512-915-5628</p>
 
-                <p class="touch__phone">952-775-6021</p>
+                        <p class="touch__phone">952-775-6021</p>
+                    </div>
+                </div>
             </div>
 
             <div class="contact-window">
+                <form id="contactForm" class="form" action="#">
+                    <div class="data">
+                        <div class="data__item">
+                            <label for="name" class="form-label">Name:</label>
+                            <input id="name" placeholder="Letha Terry" class="contact__text-input input-field"
+                                   type="text">
+                        </div>
+                        <div class="data__item">
+                            <label for="email" class="form-label">Email:</label>
+                            <input id="email" placeholder="letha.terry@ya" class="contact__text-input input-field"
+                                   type="email">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea class="input-field" name="message" id="message"></textarea>
+                    </div>
 
+                    <button type="submit" class="link_and_button">Submit</button>
+                </form>
             </div>
 
             <div class="credits-and-follow">
                 <div class="credits">
-                    <h2 class="credits__title contact__sub-title">Credits</h2>
-                    <p class="credits__text">In order to discuss the general function of the logo, we
-                        must firstly identify and define the environment where this will have to fulfill its function.</p>
+                    <h2 class="credits__title sub-title">Credits</h2>
+                    <p class="credits__text touch-content">In order to discuss the general function of the logo, we
+                        must firstly identify and define the environment where this will have to fulfill its
+                        function.</p>
 
                 </div>
                 <div class="follow">
-                    <h2 class="follow__title contact__sub-title">Follow</h2>
-                    <a href="#" class="follow__link"></a>
-                    <a href="#" class="follow__link"></a>
-                    <a href="#" class="follow__link"></a>
-                    <a href="#" class="follow__link"></a>
-                    <a href="#" class="follow__link"></a>
-                    <a href="#" class="follow__link"></a>
+                    <h2 class="follow__title sub-title">Follow</h2>
+                    <div class="follow-content">
+                        <a href="#" class="social-reference"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-reference"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-reference"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social-reference"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-reference"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="social-reference"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+
             </div>
 
         </div>
-
     </div>
 
 </section>
 
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-columns">
+            <div class="footer__item">
+                <h2 class="sub-title">Company</h2>
+                <div class="footer__item-links">
+                    <ul>
+                        <li class="footer__link"><a href="#">News</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Blog</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Testimonials</a>
+                        </li>
+                        <li class="footer__link"><a href="#">About Us</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Press Kit</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Get in Touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h2 class="sub-title">Products</h2>
+                <div class="footer__item-links">
+                    <ul>
+                        <li class="footer__link"><a href="#">UI Kits</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Icons</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Wordpress Themes</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Mock-Ups</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h2 class="sub-title">Support</h2>
+                <div class="footer__item-links">
+                    <ul>
+                        <li class="footer__link"><a href="#">Community</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Forum</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Distributors</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h2 class="sub-title">Customer</h2>
+                <div class="footer__item-links">
+                    <ul>
+                        <li class="footer__link"><a href="#">Documentation</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Tools</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Downloads</a>
+                        </li>
+                        <li class="footer__link"><a href="#">Developer Center</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <span>© 2016 Hofmann UI Kit</span>
+            </div>
+            <div class="social-references">
+                <ul>
+                    <li class="social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-linkedin"></i></a></li>
+                    <li class="social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-google-plus-g"></i></a></li>
+                    <li class="social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-twitter"></i></a></li>
+                    <li class="social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
 
 </body>
 <script>

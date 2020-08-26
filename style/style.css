@@ -256,7 +256,7 @@ a {
 
     margin-top: 52px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
 }
 
@@ -421,7 +421,7 @@ a {
 /**----------Project----------**/
 
 .project {
-    height: 793px;
+    /*height: 793px;*/
     text-align: center;
 }
 
@@ -926,12 +926,16 @@ a {
 
     /**----------Projects(1200-768)----------**/
     .project {
-        height: 920px;
+        /*height: 920px;*/
 
     }
 
     .design-choice {
         padding: 0;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 20px auto 27px;
+        font-size: 11px;
     }
 
     .design__label {
@@ -943,6 +947,7 @@ a {
     .project-items {
         justify-content: left;
         /*margin-left: -30px;*/
+        margin-bottom: 50px;
     }
 
     .project-card {
@@ -956,8 +961,161 @@ a {
         font-size: 11px;
     }
 
-}
 
+    /**----------Team(1200-768)----------**/
+    .team__title {
+        padding-top: 40px;
+    }
+
+    .team-items {
+        margin-top: 23px;
+        padding-bottom: 50px;
+        justify-content: space-evenly;
+        min-height: 310px;
+        align-content: space-between;
+    }
+
+    .team-card {
+        width: 35%;
+    }
+
+    .team-card__img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .team-card__name {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .team-card__position {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .team-card__description {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+
+    /**----------Contact us(1200-768)----------**/
+
+
+    .contact .container {
+        min-height: auto;
+    }
+
+    .contact .sub-title {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .contact__title {
+        padding-top: 40px;
+    }
+
+    .contact-content {
+        margin-top: 15px;
+        font-size: 11px;
+        line-height: 16px;
+        padding: 0 20px 68px;
+        height: 100%;
+    }
+
+
+    .contact-window {
+        border: none;
+        box-shadow: none;
+        order: -1;
+        width: 224px;
+        height: auto;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form-label {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .contact__text-input {
+        width: 109px;
+        height: 24px;
+        margin-top: 6px;
+    }
+
+    .form-label {
+        margin-top: 14px;
+    }
+
+    .input-field {
+        margin-top: 3px;
+    }
+
+    .input-field::placeholder {
+        font-size: 11px;
+        line-height: 14px;
+        padding-left: 6px;
+    }
+
+    .form .link_and_button {
+        min-width: 112px;
+        height: 25px;
+        padding: 0;
+        margin: 17px auto 0;
+    }
+
+    .get-in-touch {
+        flex-basis: 152px;
+        /*width: 152px;*/
+    }
+
+    .touch-content {
+        margin-top: 13px;
+    }
+
+    .credits-and-follow {
+        flex-basis: 220px;
+    }
+
+
+    .follow {
+        margin-top: 11px;
+    }
+
+    /**----------Footer(1200-768)----------**/
+
+    .footer{
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .footer-columns{
+        padding-top: 28px;
+    }
+
+    .footer__item{
+    /*    todo : flex-basis fot desktop*/
+
+        flex-basis: 140px;
+    }
+
+    .footer__item-links{
+        padding-top: 12px;
+    /*    todo: need title margin?*/
+    }
+
+    .footer__item .sub-title{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+}
 
 @media (max-width: 760px)and (min-width: 320px) {
 
@@ -1244,7 +1402,7 @@ a {
         height: 107px;
     }
 
-    .project-card img{
+    .project-card img {
         border-radius: 4px;
     }
 
@@ -1386,73 +1544,71 @@ a {
         display: inline;
     }
 
-    .credits-and-follow{
+    .credits-and-follow {
         max-width: none;
     }
 
-    .credits{
+    .credits {
         margin-top: 27px;
     }
 
-    .follow{
+    .follow {
         margin-top: 11px;
         width: auto;
     }
 
-    .follow-content{
+    .follow-content {
         width: 100%;
         height: auto;
         margin: 10px 0 30px;
         justify-content: start;
     }
 
-    .follow-content .social-reference{
+    .follow-content .social-reference {
         width: 10%;
         font-size: 13px;
     }
 
 
     /**------------Footer(<768)------------**/
-
-
-    .footer{
+    .footer {
         font-size: 11px;
-     height: auto;
+        height: auto;
         line-height: 13px;
     }
 
-    .footer-columns{
-        padding:0;
+    .footer-columns {
+        padding: 0;
         flex-wrap: wrap;
     }
 
-    .footer__item{
+    .footer__item {
         width: 50%;
         margin-top: 30px;
     }
 
-    .footer__item-links{
+    .footer__item-links {
         width: 80%;
     }
 
-    .footer-bottom{
+    .footer-bottom {
         padding: 0;
         margin-top: 30px;
         flex-direction: column;
     }
 
-    .footer-bottom .social-references{
+    .footer-bottom .social-references {
         order: -1;
         margin: 24px 0 28px;
         display: inline;
         justify-content: center;
     }
 
-   .footer-bottom .social-reference{
+    .footer-bottom .social-reference {
         font-size: 17px;
     }
 
-   .footer-bottom .copyright{
-       margin-bottom: 28px;
-   }
+    .footer-bottom .copyright {
+        margin-bottom: 28px;
+    }
 }

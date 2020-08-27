@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
           integrity="sha512-uBLaY+6crwV4JAHILx0HWvYncrX7TXL770hqxly0ZsQ199v4lr2yNB2jiPMoxNajFPHSQnU80B1O8dJLujWZMg=="
           crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Source+Sans+Pro:wght@300;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Source+Sans+Pro:wght@400;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
           integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style/lato_bold.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="">
-    <link name="me">
+    <link rel="icon" href="HOFMANN.svg">
 </head>
 <body>
 <header class="header">
@@ -44,14 +44,38 @@
                     </li>
                 </ul>
             </div>
-            <div class="burger">
-                <input type="checkbox" class="burger__input" id="burger">
-                <label for="burger">
-                    <div class="burger-unit"></div>
-                    <div class="burger-unit"></div>
-                    <div class="burger-unit"></div>
-                </label>
+            <!-- only for mobyle  -->
+            <input type="checkbox" class="burger__input" id="burger">
+
+            <div class="burger-menu">
+                <label for="burger" class="burger__label"><i class="fas fa-times"></i></label>
+                <ul class="burger__nav-references">
+                    <li class="burger__nav-reference-item"><a href="#" class="nav-reference">Pricing</a></li>
+                    <li class="burger__nav-reference-item"><a href="#" class="nav-reference">Projects</a></li>
+                    <li class="burger__nav-reference-item"><a href="#" class="nav-reference">Team</a></li>
+                    <li class="burger__nav-reference-item"><a href="#" class="nav-reference">Contact us</a></li>
+
+                </ul>
+                <ul class="burger__social-references">
+                    <li class="burger__social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-twitter"></i></a></li>
+                    <li class="burger__social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="burger__social-reference-item"><a href="#" class="social-reference"><i
+                            class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <div class="burger">
+
+            <label for="burger" class="burger__label">
+                <div class="burger-unit"></div>
+                <div class="burger-unit"></div>
+                <div class="burger-unit"></div>
+            </label>
+        </div>
         </div>
 
     </nav>
@@ -74,6 +98,9 @@
         </div>
 
     </section>
+
+    <!-- only for mobyle  -->
+
 </header>
 
 <section class="plan">
@@ -97,7 +124,7 @@
                 </section>
                 <section class="plan__card gold-card">
                     <div class="card-opacity"></div>
-                    <span class="plan__card-type">Gold(to do: other font)</span>
+                    <span class="plan__card-type">Gold</span>
                     <span class="plan__card-price">99</span>
                     <span class="plan__card-time">Year</span>
                     <span class="plan__card-description">Personal Account</span>
@@ -128,21 +155,21 @@
             <!----------------only phone---------------->
 
             <div class="phone_choice_plan">
-                <input class="choice_plan__radio silver-radio" checked="true" type="radio" name="plan" id="silver_plan">
+                <input class="choice_plan__radio silver-radio" type="radio" name="plan" id="silver_plan">
                 <div class="link_and_button">
                     <div class="card-opacity"></div>
-                    <label  for="silver_plan">Silver</label>
+                    <label for="silver_plan">Silver</label>
                 </div>
-                <input class="choice_plan__radio gold-radio" type="radio" name="plan" id="gold_plan">
+                <input class="choice_plan__radio gold-radio" checked="true" type="radio" name="plan" id="gold_plan">
                 <div class="link_and_button">
                     <div class="card-opacity"></div>
-                    <label  for="gold_plan">Gold</label>
+                    <label for="gold_plan">Gold</label>
                 </div>
 
                 <input class="choice_plan__radio platinum-radio" type="radio" name="plan" id="platinum_plan">
                 <div class="link_and_button ">
                     <div class="card-opacity"></div>
-                    <label  for="platinum_plan">Platinum</label>
+                    <label for="platinum_plan">Platinum</label>
                 </div>
             </div>
         </div>
@@ -258,6 +285,7 @@
                 </div>
             </div>
 
+
         </div>
 
     </div>
@@ -269,7 +297,6 @@
 
     <div class="container">
         <h1 class="section__title team__title">Our Team</h1>
-        <!--    todo : margin - padding for team item and himself section -->
 
         <div class="team-items">
 
@@ -341,6 +368,29 @@
                 </div>
             </div>
 
+            <!--          test  -->
+            <div class="team-card">
+                <img src="assets/img/team/person-4.svg" alt="worker-photo" class="team-card__img">
+                <div class="team-card__text">
+                    <h3 class="team-card__name">
+                        Eunice Wong
+                    </h3>
+                    <p class="team-card__position">Marketing consultant</p>
+                    <p class="team-card__description">Advertising Internet Online Opportunities To Explore</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="assets/img/team/person-5.svg" alt="worker-photo" class="team-card__img">
+                <div class="team-card__text">
+                    <h3 class="team-card__name">
+                        Chase Meyer
+                    </h3>
+                    <p class="team-card__position">Front-end Developer</p>
+                    <p class="team-card__description">Search Engine Optimization And Advertising</p>
+                </div>
+            </div>
+            <!--           rtest -->
         </div>
 
     </div>
@@ -410,7 +460,7 @@
                 <div class="follow">
                     <h2 class="follow__title sub-title">Follow</h2>
                     <div class="follow-content">
-<!--                        todo : margin - padding and size for tablet-->
+
                         <a href="#" class="social-reference"><i class="fab fa-pinterest"></i></a>
                         <a href="#" class="social-reference"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-reference"><i class="fab fa-google-plus-g"></i></a>
